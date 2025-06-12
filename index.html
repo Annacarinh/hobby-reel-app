@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HOBBY REEL</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Poppins:wght@900&family=Roboto+Flex:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind Config -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'brand-pink': '#eec0dd', // Used by Design 1 BG
+              'brand-blue': '#162bf4', // Used by Design 1 Text
+              'brand-lime': '#e0ff4f', // General hover accent
+              'brand-magenta': '#ed1c91', // Used by Design 3 Text
+              // New colors for the four designs:
+              'brand-neon-yellow': '#f6f502', // Design 2 Text
+              'brand-neon-green': '#00f800',  // Design 2 BG
+              'brand-rose-pink': '#f7ced5',   // Design 3 BG & Design 4 Text ("Cream")
+              'brand-neon-pink-bg': '#f63ef6' // Design 4 BG
+            },
+            aspectRatio: {
+              '16/9': '16 / 9',
+            },
+            fontFamily: {
+              'oswald': ['Oswald', 'sans-serif'],
+              'poppins': ['Poppins', 'sans-serif'],
+              'roboto-flex': ['"Roboto Flex"', 'sans-serif'],
+            }
+          },
+        },
+      }
+    </script>
+    
+    <!-- The importmap script block that WAS HERE has been REMOVED -->
+    <!-- The <link rel="stylesheet" href="/index.css"> has also been removed as it's not standard for Vite + Tailwind CDN setup and can cause issues if index.css doesn't exist or isn't processed correctly -->
+
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
