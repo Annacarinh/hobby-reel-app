@@ -372,7 +372,7 @@ const CreateReelPage: React.FC<CreateReelPageProps> = ({ editMode = false, allSh
         if (result.errorOccurred) { 
             break; 
         }
-        currentUrlToFetch = result.newNextPageUrl; 
+        currentUrlToFetch = result.newNextPageUrl ?? ""; 
 
         if (result.newVideosAdded) {
           break; 
